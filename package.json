@@ -1,0 +1,24 @@
+{
+  "name": "simple-react-spinners",
+  "version": "1.0.0",
+  "description": "CSS-only React spinners",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitek94/simple-react-spinners.git"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "spinners"
+  ],
+  "author": "Maciek Sitkowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sitek94/simple-react-spinners/issues"
+  },
+  "homepage": "https://github.com/sitek94/simple-react-spinners#readme"
+}
