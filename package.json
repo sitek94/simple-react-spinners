@@ -4,7 +4,7 @@
   "description": "CSS-only React spinners",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"*.js\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sitek94/simple-react-spinners/issues"
   },
-  "homepage": "https://github.com/sitek94/simple-react-spinners#readme"
+  "homepage": "https://github.com/sitek94/simple-react-spinners#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
