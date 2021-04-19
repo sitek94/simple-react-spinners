@@ -4,6 +4,7 @@
   "description": "CSS-only React spinners",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
     "format": "prettier --write \"*.js\"",
     "prepare": "husky install"
   },
@@ -23,11 +24,14 @@
   },
   "homepage": "https://github.com/sitek94/simple-react-spinners#readme",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.1",
     "eslint": "^7.24.0",
     "eslint-plugin-react": "^7.23.2",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "rollup": "^2.45.2",
+    "rollup-plugin-clear": "^2.0.7"
   },
   "lint-staged": {
     "*.js": [
