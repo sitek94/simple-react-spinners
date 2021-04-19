@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/sitek94/simple-react-spinners#readme",
   "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
     "prettier": "^2.2.1"
   }
 }
