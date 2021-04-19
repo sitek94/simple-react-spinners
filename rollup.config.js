@@ -1,27 +1,27 @@
-import clear from "rollup-plugin-clear"
+import clear from 'rollup-plugin-clear';
 
-const dist = "dist"
+const dist = 'dist';
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: [
     {
       file: `${dist}/bundle.cjs.js`,
-      format: "cjs",
+      format: 'cjs',
     },
     {
       file: `${dist}/bundle.es.js`,
-      format: "es",
+      format: 'es',
     },
     {
-      name: "SimpleReactSpinners",
+      name: 'SimpleReactSpinners',
       file: `${dist}/bundle.umd.js`,
-      format: "umd",
+      format: 'umd',
     },
   ],
   plugins: [
     clear({
-      targets: ["dist"],
+      targets: ['dist'],
     }),
   ],
-}
+};
