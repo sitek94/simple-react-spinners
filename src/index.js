@@ -1,8 +1,9 @@
-import { sum } from './helpers';
+import React from 'react';
 
-console.log(`Hello world!`);
-
-const a = 5;
-const b = 10;
-
-console.log(`${a} + ${b} = ${sum(a, b)}`);
+export function Spinner() {
+  return (
+    <div>
+      <h1>Spinner</h1>
+    </div>
+  );
+}
