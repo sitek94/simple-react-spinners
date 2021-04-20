@@ -2,7 +2,9 @@
   "name": "simple-react-spinners",
   "version": "1.0.0",
   "description": "CSS-only React spinners",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
     "format": "prettier --write \"**/*.js\"",
