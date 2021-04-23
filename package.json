@@ -7,13 +7,15 @@
   "sideEffects": false,
   "scripts": {
     "build": "rollup -c",
-    "format": "prettier --write \"**/*.js\"",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
+    "lint": "eslint '**/*.js'",
+    "format": "prettier '**/*.js' --write",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:staged": "jest --findRelatedTests"
   },
   "repository": {
     "type": "git",
@@ -63,8 +65,9 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "prettier --write"
+      "npm run lint",
+      "npm run format",
+      "npm run test:staged"
     ]
   },
   "dependencies": {
