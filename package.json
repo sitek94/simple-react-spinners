@@ -5,6 +5,9 @@
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prepare": "husky install",
@@ -18,7 +21,8 @@
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "test:staged": "jest --findRelatedTests",
     "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
